@@ -1,2 +1,3 @@
+let element = document.getElementById("idNAME");
 
-console.log(document);
+element.innerHTML += 'hello world'
