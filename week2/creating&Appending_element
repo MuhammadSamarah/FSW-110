@@ -1,0 +1,35 @@
+-------------------HTML---------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <title>Creating Appending Elements</title>
+</head>
+<body>
+    <ol>
+        
+        
+    </ol>
+</body>
+</html>
+
+--------------------JavaScript--------------------------
+
+var h1 = document.createElement("h1");               
+h1.innerText = "Welcome to my JS site";              
+document.body.appendChild(h1); 
+
+var par = document.createElement("P");               
+par.innerText = "All of this was created with Javascript";               
+document.body.appendChild(par);
+
+let app = document.querySelector('ol');
+
+let langs = ['JavaScript','Python','C++'];
+
+let nodes = langs.map(lang => {
+    let li = document.createElement('li');
+    li.textContent = lang;
+    return li;});
+app.append(...nodes);
+
