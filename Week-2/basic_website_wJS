@@ -1,0 +1,50 @@
+------------------HTML-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+    <ol>
+        
+        
+    </ol>
+</body>
+</html>
+---------------JavaScript--------------
+//NavBar
+var a = document.createElement('a');
+var linkText = document.createTextNode(['Edabit(1)']);
+a.appendChild(linkText);
+a.title = ['(1)'];
+a.href = ['https://edabit.com/challenges/javascript'];
+document.body.appendChild(a);
+//H1
+var h1 = document.createElement("h1");               
+h1.innerText = "This is a h1 tag";              
+document.body.appendChild(h1); 
+//(p)
+var par = document.createElement("P");               
+par.innerText = "This is a (p) tag";               
+document.body.appendChild(par);
+//list tag
+let app = document.querySelector('ol');
+let langs = ['List(1)','List(2)','List(3)'];
+let nodes = langs.map(lang => {
+    let li = document.createElement('li');
+    li.textContent = lang;
+    return li;});
+app.append(...nodes);
+//footer
+var x = document.createElement("footer");
+x.innerText = "This is a Footer tag";
+document.body.appendChild(x);
