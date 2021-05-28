@@ -1,0 +1,30 @@
+---------------HTML-------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+    <ul id="myUl"></ul>
+</body>
+
+</html>
+--------------JAVASCRIPT-------------
+for (let i = 0; i < 10; i ++) {
+    const h1for = document.createElement("h1");
+    h1for.innerHTML = "Hello world";
+    document.body.appendChild(h1for).style.backgroundColor = "red";
+}
+
+
+const names = ["steve", "larry", "joe", "shirley", "steph", "nate", "rick", "emily"];
+for (i = 0; i < names.length; i++) {
+  var li = document.createElement("li");
+  var text = document.createTextNode(names[i]);
+  li.appendChild(text);
+  document.getElementById("myUl").appendChild(li);
+}
