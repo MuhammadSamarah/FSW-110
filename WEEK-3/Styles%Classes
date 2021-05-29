@@ -1,0 +1,33 @@
+--------HTML---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<h2 class="border">
+    <ul id="myUl"></ul>
+</h2>
+    
+    
+</body>
+</html>
+----------JAVASCRIPT-----------
+var array = ["Hello World 1", "Hello World 2", "Hello World 3", "Hello World 4", "Hello World 5"]
+for (i = 0; i < array.length; i++) {
+  var li = document.createElement("li");
+  var text = document.createTextNode(array[i]);
+  li.appendChild(text);
+  document.getElementById("myUl").appendChild(li).style.color = "cornflowerblue";
+  document.getElementById("myUl").appendChild(li).style.fontSize = "20px";
+  document.getElementById("myUl").appendChild(li).style.fontWeight = "lighter";
+  document.getElementById("myUl").appendChild(li).style.fontFamily = "sans-serif";
+}
+-----------------CSS-------------------
+.border {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
