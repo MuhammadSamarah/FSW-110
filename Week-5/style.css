@@ -1,0 +1,19 @@
+* {
+    background: white;
+  }
+  label,
+  #fname,
+  #lname,
+  #age {
+    display: block;
+  }
+  #button {
+    border: 3px solid black;
+    background: lightgray;
+  }
+
+  #wrapper {
+    border: 1px solid #888;
+    display: inline-block;
+    padding:20px;
+}
