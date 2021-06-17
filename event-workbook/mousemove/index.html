@@ -10,7 +10,14 @@
 <body>
     <h1>x and y</h1>
     <h3>move your mouse in the box to see the coordinates of your mouse</h3>
-    <div class="red-box"></div>
+    <div onmousemove="coordinate(event)" class="red-box">
+        X-coordinate
+        <input type="text" id="X">
+        <br>
+        <br>
+        Y-coordinate
+        <input type="text" id="Y">
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
